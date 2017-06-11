@@ -306,7 +306,7 @@ var LoginComponent = (function () {
         this.authService.authenticateUser(user).subscribe(function (data) {
             if (data.success) {
                 _this.authService.storeUserData(data.token, data.user);
-                _this.flashMessage.show('Log in com sucesso.', {
+                _this.flashMessage.show('Log in  com  sucesso.', {
                     cssClass: 'alert-success',
                     timeout: 5000 });
                 _this.router.navigate(['dashboard']);
