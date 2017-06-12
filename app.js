@@ -11,12 +11,12 @@ mongoose.connect(config.database);
 
 //em conexao
 mongoose.connection.on('ligado', () => {
-  console.log('ligado à base de dados '+config.database);
+  console.log('ligado à base de dados  '+config.database);
 });
 
 // erro
 mongoose.connection.on('erro', (err) => {
-  console.log('erro de base de dados: '+err);
+  console.log('erro de base  de dados: '+err);
 });
 
 const app = express();
